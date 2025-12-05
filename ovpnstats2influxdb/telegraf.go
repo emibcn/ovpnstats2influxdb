@@ -3,7 +3,7 @@ package ovpnstats2influxdb
 import (
 	"fmt"
 
-	"github.com/thor77/ovpnstats"
+	"github.com/emibcn/ovpnstats"
 )
 
 // RunTelegraf prints Telegraf-compatible metric-output to stdout

@@ -4,7 +4,7 @@ import (
 	"flag"
 	"log"
 
-	"github.com/thor77/ovpnstats2influxdb/ovpnstats2influxdb"
+	"github.com/emibcn/ovpnstats2influxdb/ovpnstats2influxdb"
 )
 
 func main() {

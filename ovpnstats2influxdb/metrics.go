@@ -1,7 +1,7 @@
 package ovpnstats2influxdb
 
 import (
-	"github.com/thor77/ovpnstats"
+	"github.com/emibcn/ovpnstats"
 )
 
 // Metric represents metric events with all required information to write it into an InfluxDB

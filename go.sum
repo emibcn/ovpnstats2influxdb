@@ -216,8 +216,8 @@ github.com/stretchr/testify v1.2.1/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXf
 github.com/stretchr/testify v1.2.2/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXfy6kDkUVs=
 github.com/tcnksm/go-input v0.0.0-20180404061846-548a7d7a8ee8/go.mod h1:IlWNj9v/13q7xFbaK4mbyzMNwrZLaWSHx/aibKIZuIg=
 github.com/testcontainers/testcontainer-go v0.0.0-20181115231424-8e868ca12c0f/go.mod h1:SrG3IY071gtmZJjGbKO+POJ57a/MMESerYNWt6ZRtKs=
-github.com/thor77/ovpnstats v0.1.3 h1:L9iYefkzGiJEHYuN6LJtZtIiW+EiuSmPWyOWLP8RXkU=
-github.com/thor77/ovpnstats v0.1.3/go.mod h1:SQpoAIsF9XimHqLl4S+ofcG2mFGU6pKHqugZY6b1bKs=
+github.com/emibcn/ovpnstats v0.1.3 h1:L9iYefkzGiJEHYuN6LJtZtIiW+EiuSmPWyOWLP8RXkU=
+github.com/emibcn/ovpnstats v0.1.3/go.mod h1:SQpoAIsF9XimHqLl4S+ofcG2mFGU6pKHqugZY6b1bKs=
 github.com/tinylib/msgp v1.0.2/go.mod h1:+d+yLhGm8mzTaHzB+wgMYrodPfmZrzkirds8fDWklFE=
 github.com/tv42/httpunix v0.0.0-20150427012821-b75d8614f926/go.mod h1:9ESjWnEqriFuLhtthL60Sar/7RFoluCcXsuvEwTV5KM=
 github.com/tylerb/graceful v1.2.15/go.mod h1:LPYTbOYmUTdabwRt0TGhLllQ0MUNbs0Y5q1WXJOI9II=
