@@ -11,5 +11,5 @@ type Metric struct {
 }
 
 func createMetrics(clients []ovpnstats.ClientInfo, routes []ovpnstats.RoutingInfo) []Metric {
-	return []Metric{Metric{map[string]interface{}{"clients": len(clients), "routes": len(routes)}, nil}}
+	return []Metric{ Metric{ map[string]interface{}{ "clients": clients, "routes": routes }, nil } }
 }
