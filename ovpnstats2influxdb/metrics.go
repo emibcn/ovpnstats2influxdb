@@ -1,6 +1,7 @@
 package ovpnstats2influxdb
 
 import (
+	"encoding/json"
 	"github.com/emibcn/ovpnstats"
 )
 
@@ -11,5 +12,35 @@ type Metric struct {
 }
 
 func createMetrics(clients []ovpnstats.ClientInfo, routes []ovpnstats.RoutingInfo) []Metric {
-	return []Metric{ Metric{ map[string]interface{}{ "clients": clients, "routes": routes }, nil } }
+	return []Metric{Metric{map[string]interface{}{"clients": len(clients), "routes": len(routes)}, nil}}
+}
+
+func createMetricsClients(clients []ovpnstats.ClientInfo) []Metric {
+	var inInterface []map[string]interface{}
+	var metrics []Metric
+
+	inrec, _ := json.Marshal(clients)
+	json.Unmarshal(inrec, &inInterface)
+
+	for _, obj := range inInterface {
+		var met = Metric{obj, nil}
+		metrics = append(metrics, met)
+	}
+
+	return metrics
+}
+
+func createMetricsRoutes(routes []ovpnstats.RoutingInfo) []Metric {
+	var inInterface []map[string]interface{}
+	var metrics []Metric
+
+	inrec, _ := json.Marshal(routes)
+	json.Unmarshal(inrec, &inInterface)
+
+	for _, obj := range inInterface {
+		var met = Metric{obj, nil}
+		metrics = append(metrics, met)
+	}
+
+	return metrics
 }
