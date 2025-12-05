@@ -23,7 +23,11 @@ func createMetricsClients(clients []ovpnstats.ClientInfo) []Metric {
 	json.Unmarshal(inrec, &inInterface)
 
 	for _, obj := range inInterface {
-		var met = Metric{obj, nil}
+		tags := map[string]string{
+			"connection": obj["Name"].(string),
+		}
+
+		var met = Metric{obj, tags}
 		metrics = append(metrics, met)
 	}
 
@@ -38,7 +42,11 @@ func createMetricsRoutes(routes []ovpnstats.RoutingInfo) []Metric {
 	json.Unmarshal(inrec, &inInterface)
 
 	for _, obj := range inInterface {
-		var met = Metric{obj, nil}
+		tags := map[string]string{
+			"connection": obj["CommonName"].(string),
+		}
+
+		var met = Metric{obj, tags}
 		metrics = append(metrics, met)
 	}
 
